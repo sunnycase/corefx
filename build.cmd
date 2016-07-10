@@ -52,7 +52,7 @@ if not defined VisualStudioVersion (
 
 :Build
 :: Restore the Tools directory
-call %~dp0init-tools.cmd
+REM call %~dp0init-tools.cmd
 
 :: Call the builds
 if "%__buildSpec%"=="managed"  goto :BuildManaged

@@ -60,7 +60,6 @@
   <PropertyGroup Condition="'$(RestoreDuringBuild)'=='true'">
     <TraversalBuildDependsOn>
       ValidateAllProjectDependencies;
-      BatchRestorePackages;
       ValidateExactRestore;
       CreateOrUpdateCurrentVersionFile;
       $(TraversalBuildDependsOn);
